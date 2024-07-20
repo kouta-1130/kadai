@@ -1,16 +1,3 @@
 body {
-            background-color: lightblue; /* 全体の背景カラー */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* 水平方向に中央揃え */
-            align-items: center; /* 垂直方向に中央揃え */
-            height: 100vh; /* ビューポートの高さ全体を使用 */
-        }
-        .container {
-            background-color: white; /* 中央部分の背景カラー */
-            padding: 20px;
-            max-width: 768px; /* 最大幅を768pxに設定 */
-            width: 100%; /* 幅を100%に設定して中央揃え */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    background-color: red; /* 背景色を赤色に設定 */
+}
