@@ -42,3 +42,52 @@ body {
   margin-top: 2px;
   margin-left: 50px;
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toc {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.toc h2 {
+    margin-top: 0;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin-bottom: 10px;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+html {
+    scroll-behavior: smooth; /* スムーズスクロールを有効にする */
+}
