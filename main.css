@@ -1,6 +1,4 @@
-body {
-    background-color: red; /* 背景色を赤色に設定 */
-}
+
 .underlined-heading {
     position: relative; /* 擬似要素の位置を相対的に設定 */
     text-align: center; /* 見出しを中央揃えに設定 */
