@@ -55,32 +55,36 @@ body {
     padding: 20px;
 }
 
-.toc {
+/* 目次コンテナのスタイル */
+.toc-container {
     background-color: #f9f9f9;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
+    border-radius: 8px; /* 角を丸くする */
 }
 
-.toc h2 {
+/* 目次の見出し */
+.toc-container h2 {
     margin-top: 0;
 }
 
-.toc ul {
+/* 目次リストのスタイル */
+.toc {
     list-style-type: none;
     padding-left: 0;
 }
 
-.toc ul li {
+.toc li {
     margin-bottom: 10px;
 }
 
-.toc ul li a {
+.toc a {
     text-decoration: none;
     color: #007BFF;
 }
 
-.toc ul li a:hover {
+.toc a:hover {
     text-decoration: underline;
 }
 
