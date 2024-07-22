@@ -1,20 +1,20 @@
 let slideIndex = 0;
-showSlides(slideIndex);
+showSlides();
 
-function changeSlide(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
+function showSlides() {
     let slides = document.getElementsByClassName("slide");
-    if (n >= slides.length) {
-        slideIndex = 0;
-    }
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // 2秒ごとにスライドを切り替え
+}
+
+function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex > document.getElementsByClassName("slide").length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = document.getElementsByClassName("slide").length}
+    showSlides(slideIndex);
 }
